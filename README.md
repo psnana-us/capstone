@@ -1,10 +1,23 @@
 # capstone
 
-Credit Card Fraud EDA Summary Report
+# Credit Card Fraud EDA Summary Report
 Overview
 This notebook performs an extensive Exploratory Data Analysis (EDA) on the Kaggle Credit Card Fraud dataset. The goal is to understand the dataset characteristics, identify patterns, visualize feature distributions, and uncover insights related to fraudulent transactions, going beyond basic summary statistics to inform potential modeling efforts.
 
 Jupyter Notebook location:  https://github.com/psnana-us/capstone/blob/main/CreditCard_Fraud_EDA_Detailed.ipynb
+
+Executive Summary: 
+  1.	We conducted a credit card fraud detection analysis using real transaction data and applied a technique to balance the rare fraud cases.
+	2.	Two predictive models were trained and tuned: a Random Forest and a Logistic Regression.
+	3.	We optimized each model’s settings on balanced data to improve their ability to spot fraud.
+	4.	In cross-validation tests, the Random Forest achieved an almost perfect F1 score, while Logistic Regression also performed admirably.
+	5.	On the original imbalanced test data, Random Forest maintained high precision and recall, catching 85% of frauds with very few false alarms.
+	6.	Logistic Regression matched the recall but generated many more false positives, leading to less reliable alerts.
+	7.	The results demonstrate that ensemble tree methods are particularly effective for detecting fraud in uneven datasets.
+	8.	By emphasizing precision and recall over overall accuracy, the analysis shows how each model behaves in real-world scenarios.
+	9.	Organizations can leverage these insights to deploy fraud detectors that minimize financial losses and customer inconvenience.
+	10.	Overall, this study provides a clear roadmap for improving fraud prevention, reducing costs, and enhancing customer trust.
+
 
 Data Loading and Initial Processing
 •	The dataset creditcard.csv was loaded into a pandas DataFrame.
