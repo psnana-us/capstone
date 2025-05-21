@@ -6,8 +6,8 @@ This notebook performs an extensive Exploratory Data Analysis (EDA) on the Kaggl
 
 Jupyter Notebook location:  https://github.com/psnana-us/capstone/blob/main/CreditCard_Fraud_EDA_Detailed.ipynb
 
-Executive Summary: 
-  1.	We conducted a credit card fraud detection analysis using real transaction data and applied a technique to balance the rare fraud cases.
+# Executive Summary: 
+	1.	We conducted a credit card fraud detection analysis using real transaction data and applied a technique to balance the rare fraud cases.
 	2.	Two predictive models were trained and tuned: a Random Forest and a Logistic Regression.
 	3.	We optimized each model’s settings on balanced data to improve their ability to spot fraud.
 	4.	In cross-validation tests, the Random Forest achieved an almost perfect F1 score, while Logistic Regression also performed admirably.
