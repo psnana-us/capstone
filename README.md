@@ -4,7 +4,7 @@
 Overview
 This notebook performs an extensive Exploratory Data Analysis (EDA) on the Kaggle Credit Card Fraud dataset. The goal is to understand the dataset characteristics, identify patterns, visualize feature distributions, and uncover insights related to fraudulent transactions, going beyond basic summary statistics to inform potential modeling efforts.
 
-# Jupyter Notebook location: https://github.com/psnana-us/capstone/blob/main/CreditCard_Fraud_final.ipynb
+# Jupyter Notebook location: [https://github.com/psnana-us/capstone/blob/main/CreditCard_Fraud_Capstone_Final.ipynb]
 
 # Jupyter Notebook location for EDA only:  https://github.com/psnana-us/capstone/blob/main/CreditCard_Fraud_EDA_Detailed.ipynb
 
