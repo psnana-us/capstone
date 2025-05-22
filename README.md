@@ -27,7 +27,6 @@ To maintain and enhance the solution's effectiveness, stakeholders are recommend
 - Engage in continuous transaction monitoring and incorporate predictive analytics to proactively identify new patterns of fraud.
 # Conclusion
 This detailed analysis underscores the transformative potential of machine learning solutions in financial security. The demonstrated accuracy and reliability of the models provide stakeholders with actionable insights to enhance fraud prevention capabilities, thereby safeguarding financial assets and strengthening consumer trust.
-![image](https://github.com/user-attachments/assets/f2b43c2f-e593-4704-8bd0-281b9f7b8f53)
 
 # Technical Details and Approach
 
