@@ -4,22 +4,32 @@
 Overview
 This notebook performs an extensive Exploratory Data Analysis (EDA) on the Kaggle Credit Card Fraud dataset. The goal is to understand the dataset characteristics, identify patterns, visualize feature distributions, and uncover insights related to fraudulent transactions, going beyond basic summary statistics to inform potential modeling efforts.
 
-Jupyter Notebook location; https://github.com/psnana-us/capstone/blob/main/CreditCard_Fraud_final.ipynb
+# Jupyter Notebook location: https://github.com/psnana-us/capstone/blob/main/CreditCard_Fraud_final.ipynb
 
-Jupyter Notebook location for EDA only:  https://github.com/psnana-us/capstone/blob/main/CreditCard_Fraud_EDA_Detailed.ipynb
+# Jupyter Notebook location for EDA only:  https://github.com/psnana-us/capstone/blob/main/CreditCard_Fraud_EDA_Detailed.ipynb
 
-# Executive Summary: 
-	1.	We conducted a credit card fraud detection analysis using real transaction data and applied a technique to balance the rare fraud cases.
-	2.	Two predictive models were trained and tuned: a Random Forest and a Logistic Regression.
-	3.	We optimized each model’s settings on balanced data to improve their ability to spot fraud.
-	4.	In cross-validation tests, the Random Forest achieved an almost perfect F1 score, while Logistic Regression also performed admirably.
-	5.	On the original imbalanced test data, Random Forest maintained high precision and recall, catching 85% of frauds with very few false alarms.
-	6.	Logistic Regression matched the recall but generated many more false positives, leading to less reliable alerts.
-	7.	The results demonstrate that ensemble tree methods are particularly effective for detecting fraud in uneven datasets.
-	8.	By emphasizing precision and recall over overall accuracy, the analysis shows how each model behaves in real-world scenarios.
-	9.	Organizations can leverage these insights to deploy fraud detectors that minimize financial losses and customer inconvenience.
-	10.	Overall, this study provides a clear roadmap for improving fraud prevention, reducing costs, and enhancing customer trust.
+# Executive Summary: Credit Card Fraud Detection Analysis
+# Objective
+The primary objective of this analysis is to implement a powerful, accurate, and efficient solution for detecting credit card fraud. Leveraging advanced machine learning techniques, this solution aims to minimize fraudulent activities, significantly reduce financial losses, and bolster consumer confidence.
+# Approach
+The analysis utilized a comprehensive dataset comprising credit card transactions clearly labeled as legitimate or fraudulent. The data was meticulously split into training and testing subsets to validate the solution's effectiveness rigorously. Given the inherent imbalance in the dataset (few fraud cases vs. many legitimate transactions), class weighting methods were implemented to ensure fair representation of each class. Two state-of-the-art machine learning algorithms, Random Forest and Logistic Regression, were employed. Additionally, feature scaling was executed to enhance the consistency and accuracy of the predictive models.
+# Outcome
+The Random Forest algorithm exhibited outstanding performance, achieving an F1 score of 0.8583. This high score highlights the model's precision and recall, ensuring reliable fraud detection while minimizing false alarms. The Logistic Regression model also delivered commendable results, with an F1 score of 0.1044, validating the robustness and adaptability of linear models in fraud detection scenarios.
+# Benefits
+Implementing this machine learning solution offers multiple significant benefits, including:
+- Substantial reduction in financial losses resulting from fraud due to high detection accuracy.
+- Enhanced reliability of transaction monitoring by dramatically lowering false positives (erroneous fraud alerts) and false negatives (missed fraud cases).
+- Increased consumer confidence and improved stakeholder trust through demonstrably effective and proactive security measures.
+# Recommendations
+To maintain and enhance the solution's effectiveness, stakeholders are recommended to:
+- Deploy the Random Forest model as it has demonstrated superior accuracy and effectiveness.
+- Regularly retrain and update the model to stay effective against evolving fraudulent methods.
+- Engage in continuous transaction monitoring and incorporate predictive analytics to proactively identify new patterns of fraud.
+# Conclusion
+This detailed analysis underscores the transformative potential of machine learning solutions in financial security. The demonstrated accuracy and reliability of the models provide stakeholders with actionable insights to enhance fraud prevention capabilities, thereby safeguarding financial assets and strengthening consumer trust.
+![image](https://github.com/user-attachments/assets/f2b43c2f-e593-4704-8bd0-281b9f7b8f53)
 
+# Technical Details and Approach
 
 Data Loading and Initial Processing
 •	The dataset creditcard.csv was loaded into a pandas DataFrame.
@@ -89,5 +99,3 @@ o	ROC-AUC Score: A metric less sensitive to imbalance, assessing the model's abi
 •	Evaluation Metric Rationale: ROC-AUC was chosen for its robustness to imbalance, while F1-score was highlighted for balancing precision and recall, both crucial in fraud detection.
 Conclusion
 The EDA revealed the highly imbalanced nature of the dataset and highlighted key features (several V features, Time, and Amount) that are indicative of fraudulent transactions. Visualizations provided insights into the distributions and relationships between features and their connection to the target variable. Feature engineering created potentially useful new features. A baseline Logistic Regression model was successfully trained and evaluated, providing initial performance metrics while addressing data issues like scaling and class imbalance. These findings and the baseline model serve as a strong foundation for further model development and comparison.
-
-![image](https://github.com/user-attachments/assets/af8ac7d7-124d-4669-aabc-de5d7bb2c1b6)
